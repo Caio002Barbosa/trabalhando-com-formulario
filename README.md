@@ -4,8 +4,9 @@
 
 
 ## Como usar
-Esta aplicação precisa ter instalado NodeJS enpm, click [aqui](https://nodejs.org/) para ir ao site oficial.
-Com tudo configurado, você deve abrir seu terminal de preferência e ir até a pasta `trabalhando-com-formulario`.
+Esta aplicação precisa ter instalado NodeJS e npm, click [aqui](https://nodejs.org/) para ir ao site oficial.
+
+Com tudo configurado, abra seu terminal de preferência e vá até a pasta `trabalhando-com-formulario`.
 
 Execute `npm i` para instalar todas as dependências. Este processo pode demorar um pouco.
 
