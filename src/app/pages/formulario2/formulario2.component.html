@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-10">
+      <div class="d-flex justify-content-start">
+        <h1>Formulário 02</h1>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="d-flex justify-content-end">
+        <button routerLink="" type="button" class="btn btn-dark">Home</button>
+      </div>
+    </div>
+  </div>
+
+    <hr>
+    <div class="feed">  
+      <div class="row">
+        <div class="col-xl-6">
+          <form [formGroup]="formulario" (ngSubmit)="validar()">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Nome</label>
+                <input formControlName="nome" class="form-control" type="text">
+              </div>
+              <div class="col-md-6">
+                <label>Sobrenome</label>
+                <input formControlName="sobrenome" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Data de nascimento</label>
+                <input formControlName="dataNascimento" class="form-control" type="date">
+              </div>
+              <div class="col-md-6">
+                <label>Idade</label>
+                <input formControlName="idade" class="form-control">
+              </div>
+            </div>
+            <br>
+            
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-dark">Validar</button>
+            </div>
+          </form>
+          <ngb-alert *ngIf="mensagemAlert != null" class="mt-3" [type]="mensagemAlert.type" (close)="close()">{{ mensagemAlert.message }}</ngb-alert>
+        </div>
+        
+        <div class="col-xl-6">
+          <label>Status do formulário: <strong>{{ formulario.status }}</strong></label>
+          <hr>
+          <p>Dados do formulário.</p>
+          
+          <pre>{{ formulario.getRawValue() | json}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+input.ng-dirty.ng-valid {
+  @extend .is-valid;
+}
+
+input.ng-dirty.ng-invalid {
+  @extend .is-invalid;
+}
+
+.aviso {
+  color: crimson;
+}
