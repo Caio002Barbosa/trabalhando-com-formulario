@@ -1,6 +1,6 @@
 # trabalhando-com-formulario
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/trabalhando-com-formulario)
+[Visualize e edite no StackBlitz ⚡️](https://stackblitz.com/edit/trabalhando-com-formulario)
 
 
 ## Como usar
