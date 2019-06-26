@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
-
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Alert } from '../../model/alert.model';
 import { CompararCampos } from './validacaoCustomizada';
 
