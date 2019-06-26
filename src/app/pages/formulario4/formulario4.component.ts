@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, AbstractControl, ValidatorFn } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { Alert } from '../../model/alert.model';
 import { validarEmail } from './validacaoCustomizada';
@@ -12,9 +12,9 @@ import { validarEmail } from './validacaoCustomizada';
 export class Formulario4Component implements OnInit {
 
   public formulario: FormGroup = new FormGroup({
-    nome:           new FormControl('', [Validators.required, Validators.minLength(3)]),
-    sobrenome:      new FormControl('', [Validators.required, Validators.minLength(3)]),
-    email:          new FormControl(null, [Validators.compose([Validators.email, validarEmail('gmail.com')])]),
+    nome:      new FormControl('', [Validators.required, Validators.minLength(3)]),
+    sobrenome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    email:     new FormControl('', [Validators.compose([Validators.email, validarEmail('gmail.com')])]),
   });
 
   alerts: Alert[] = [
