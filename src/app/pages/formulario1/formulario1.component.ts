@@ -9,7 +9,7 @@ import { Alert } from '../../model/alert.model';
 })
 export class Formulario1Component implements OnInit { 
   public formulario: FormGroup = new FormGroup({
-    nome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    nome:      new FormControl('', [Validators.required, Validators.minLength(3)]),
     sobrenome: new FormControl('', [Validators.required, Validators.minLength(3)])
   });
 
