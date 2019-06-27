@@ -12,44 +12,44 @@
     </div>
   </div>
 
-    <hr>
-    <div class="feed">  
-      <div class="row">
-        <div class="col-xl-6">
-          <form [formGroup]="formulario" (ngSubmit)="validar()">
-            <div class="row">
-              <div class="col-md-6">
-                <label>Nome</label>
-                <input formControlName="nome" class="form-control" type="text">
-              </div>
-              <div class="col-md-6">
-                <label>Sobrenome</label>
-                <input formControlName="sobrenome" class="form-control" type="text">
-              </div>
+  <hr>
+  <div class="feed">  
+    <div class="row">
+      <div class="col-xl-6">
+        <form [formGroup]="formulario" (ngSubmit)="validar()">
+          <div class="row">
+            <div class="col-md-6">
+              <label>Nome</label>
+              <input formControlName="nome" class="form-control" type="text">
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <label>email</label>
-                <input formControlName="email" class="form-control" type="text">
-              </div>
+            <div class="col-md-6">
+              <label>Sobrenome</label>
+              <input formControlName="sobrenome" class="form-control" type="text">
             </div>
-            <br>
-            
-            <div class="d-flex justify-content-end">
-              <button type="submit" class="btn btn-dark">Validar</button>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>email</label>
+              <input formControlName="email" class="form-control" type="text">
             </div>
-          </form>
-          <ngb-alert *ngIf="mensagemAlert != null" class="mt-3" [type]="mensagemAlert.type" (close)="close()">{{ mensagemAlert.message }}</ngb-alert>
-        </div>
-        
-        <div class="col-xl-6">
-          <p class="aviso">O domínio do email deve ser <i><u>gmail.com</u></i></p>
-          <label>Status do formulário: <strong>{{ formulario.status }}</strong></label>
-          <hr>
-          <p>Dados do formulário.</p>
+          </div>
+          <br>
           
-          <pre>{{ formulario.getRawValue() | json}}</pre>
-        </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-dark">Validar</button>
+          </div>
+        </form>
+        <ngb-alert *ngIf="mensagemAlert != null" class="mt-3" [type]="mensagemAlert.type" (close)="close()">{{ mensagemAlert.message }}</ngb-alert>
+      </div>
+      
+      <div class="col-xl-6">
+        <p class="aviso">O domínio do email deve ser <i><u>gmail.com</u></i></p>
+        <label>Status do formulário: <strong>{{ formulario.status }}</strong></label>
+        <hr>
+        <p>Dados do formulário.</p>
+        
+        <pre>{{ formulario.getRawValue() | json}}</pre>
       </div>
     </div>
   </div>
+</div>
