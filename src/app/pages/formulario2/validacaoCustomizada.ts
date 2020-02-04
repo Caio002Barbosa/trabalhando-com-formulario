@@ -1,7 +1,7 @@
 import { FormControl } from "@angular/forms";
 
 /** Validação customizada de formulário */
-export function validarData(control: FormControl): {[key: string]: boolean} {
+export const validarData = (control: FormControl): {[key: string]: boolean} => {
   // Obtém dados
   const hoje: Date = new Date();
   const dataObtida: Date = new Date(control.value);
